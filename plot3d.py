@@ -5,7 +5,7 @@ from numpy import array
 
 def plot3d(my_matrix):
     # cast to array
-    my_array = array(my_matrix)
+    my_array = array(my_matrix.T)
     class Arrow3D(FancyArrowPatch):
         def __init__(self, xs, ys, zs, *args, **kwargs):
             FancyArrowPatch.__init__(self, (0,0), (0,0), *args, **kwargs)
